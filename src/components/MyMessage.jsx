@@ -4,7 +4,7 @@ function MyMessage({message}) {
     if(message?.attachments?.length>0) //check if text or image 
     {
         return (
-            <img src ={message.attachments[0].file} className='message-image' style={{float:'right'}}/>
+            <img src ={message.attachments[0].file} className='message-image' style={{float:'right'} } alt='img'/>
 
         )
     }
